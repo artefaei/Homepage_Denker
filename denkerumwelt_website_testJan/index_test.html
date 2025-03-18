@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DENKER Umwelt | Consulting etc.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Denker Umwelt bietet Consulting für Bauherren, Baufirmen, Planer und Behörden.">
+
+  <meta property="og:title" content="Denker Umwelt | Consulting für Bauherren und Behörden">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="...">
+  <meta property="og:image" content="img/Logo_Kurz.png">
+  <meta property="og:image:alt" content="Denker Umwelt Logo">
+
+  <link rel="icon" href="img/Logo_Kurz.png" sizes="any">
+  <link rel="icon" href="img/Logo_Kurz.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/Logo_Kurz.png">
+
+  <link rel="lokal.denkerumwelt.tessite1" href="lokal.denker-umwelt-testsite1">
+  <meta name="theme-color" content="#fafafa">
+  <style>.circle-button {
+    position: relative;
+    display: inline-block;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .links {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+
+  .circle-button:hover .links {
+    display: flex;
+  }
+
+  .popup {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .links a:hover {
+    cursor: pointer;
+  }
+  </style>
+</head>
+
+<body>
+<header>
+  <nav class="navbar section-content navbar-container">
+    <a href="#" class="nav-logo">
+      <img src="img/LOGO_2005.png" width="300px" alt="Firmenlogo von Denker Umwelt">
+    </a>
+
+    <!-- Hamburger Icon -->
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <ul class="nav-menu">
+      <li class="nav-link"><a href="index.html">Home</a></li>
+      <li class="nav-link"><a href="Arbeitsgebiete.html">Arbeitsgebiete</a></li>
+      <li class="nav-link"><a href="Team.html">Über uns</a></li>
+      <li class="nav-link"><a href="Kooperationen.html">Kooperationen</a></li>
+      <li class="nav-link"><a href="Referenzen.html">Referenzen</a></li>
+      <li class="nav-link"><a href="jobs.html">Jobs</a></li>
+      <li class="nav-link"><a href="Findus.html">Finde Uns</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="circle-button">
+  <div class="links">
+    <a href="#link1">Link 1</a>
+    <a href="#link2">Link 2</a>
+    <a href="#link3">Link 3</a>
+  </div>
+  <button>+</button>
+</div>
+
+<div class="popup">
+  <p>Hier erscheint die Erklärung, wenn auf einen Link geklickt wird.</p>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <table border="0" style="width: 100%; text-align: left; border-collapse: collapse;">
+      <thead>
+      <tr>
+        <th>Adresse</th>
+        <th>Links</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          Mühlenstraße 31, 33607 Bielefeld<br>
+          Telefon: 0521 123456789<br>
+          E-Mail: info@denker-umwelt.de
+        </td>
+        <td>
+          <ul>
+            <li><a href="AGB.html">AGB</a></li>
+            <li><a href="Impressum.html">Impressum</a></li>
+            <li><a href="DSGVO.html">Datenschutzerklärung</a></li>
+          </ul>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <a href="#" class="footer-logo">
+      <img src="img/Logo_Kurz.png" width="60px" alt="Denker Umwelt Logo">
+    </a>
+
+    <p>&copy;2025 Denker Umwelt. Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.links a').forEach(item => {
+    item.addEventListener('click', function() {
+      document.querySelector('.popup').style.display = 'block';
+      document.querySelector('.popup p').innerText = `Erklärung für ${item.textContent}`;
+    });
+  });
+
+</script>
+
+</body>
+</html>
